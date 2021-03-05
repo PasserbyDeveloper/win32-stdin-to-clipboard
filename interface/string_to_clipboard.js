@@ -6,7 +6,7 @@ const native_application_path = "../build/stdin-to-clipboard.exe";
 /**
  * Set the global clipboard string
  * @param {string} text
- * @param {boolean} [debug] default false, no extra information is printed to stdout
+ * @param {boolean} [debug] default false so that no extra information is printed to stdout
  * @returns {Promise<{success: true} | {error: true, message: string}>}
  */
 function string_to_clipboard(text, debug = false) {

@@ -20,11 +20,11 @@ Compiling is done by the `compile-windows-loop.bat` batch script.
 
 The file `./interface/string_to_clipboard.js` exposes a single NodeJS asyncronous function that depends on `child_process` module to operate the native application to achieve its goal
 
-```js
+```ts
 /**
  * Set the global clipboard string
  * @param {string} text
- * @param {boolean} [debug] default false, no extra information is printed to stdout
+ * @param {boolean} [debug] default false so that no extra information is printed to stdout
  * @returns {Promise<{success: true} | {error: true, message: string}>}
  */
 async function string_to_clipboard(text, debug = false) {
